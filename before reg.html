@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Space Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #0b0c2a, #1a1a3f);
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 30px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1, h2 {
+            color: #00e6e6;
+            animation: slideIn 1.5s ease-in;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .btn {
+            background-color: #00e6e6;
+            color: black;
+            padding: 12px 28px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #00b3b3;
+            transform: scale(1.05);
+        }
+
+        ul.topics {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        ul.topics li {
+            background-color: rgba(0, 230, 230, 0.1);
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            display: inline-block;
+            min-width: 150px;
+            transition: background-color 0.3s;
+        }
+
+        ul.topics li:hover {
+            background-color: #00e6e6;
+            color: black;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Space & Technology Event 2026</h1>
+
+    <p>
+        This event is inspired by world-leading space organizations 
+        like <b>ISRO</b> and <b>NASA</b>.
+    </p>
+
+    <h2>About ISRO</h2>
+    <p>
+        ISRO is India's space agency known for missions like Chandrayaan 
+        and Mars Orbiter Mission.
+    </p>
+
+    <h2>About NASA</h2>
+    <p>
+        NASA is a US space agency famous for moon missions and advanced research.
+    </p>
+
+    <h2>About the Event</h2>
+    <p>
+        The event includes sessions on:
+    </p>
+    <ul class="topics">
+        <li>Artificial Intelligence</li>
+        <li>Robotics</li>
+        <li>Space Technology</li>
+        <li>Virtual Reality</li>
+        <li>Self-Driving Car</li>
+    </ul>
+
+    <h2>Participation Mode</h2>
+    <p>
+        Students can join this event in both <b>Online</b> and 
+        <b>Offline</b> modes.
+    </p>
+
+    <p>Click below to register for the event.</p>
+
+    <a href="reg form.html">
+        <button class="btn">Register Now</button>
+    </a>
+</div>
+</body>
+</html>

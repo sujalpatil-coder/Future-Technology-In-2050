@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Future Technology</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    animation: slideDown 1s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* SECTION */
+section {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HEADINGS */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00e6e6;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+    animation: fadeInUp 1s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* STUDENTS GRID */
+.students {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* STUDENT CARD */
+.student {
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.student:hover {
+    transform: scale(1.07);
+    background: rgba(0, 230, 230, 0.2);
+}
+
+/* TEXT */
+.student h3 {
+    margin: 10px 0 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+}
+.center-btn {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    gap: 20px;                 /* space between buttons */
+    margin: 40px 0;
+}
+
+/* Button style */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Back button */
+.back {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Future Technology</h1>
+    <p>About Our Project & Team</p>
+</header>
+<section>
+<div class="card">
+    <h2>About Project</h2>
+    <p>
+        This project is based on <b>Future Technology</b>, covering modern innovations like 
+        Artificial Intelligence, Robotics, Virtual Reality, Self-Driving Cars, and Space Technology.
+        The aim of this project is to explore how technology is shaping the future and making human life easier, smarter, and more efficient.
+    </p>
+</div>
+
+<div class="card">
+    <h2>About Institution</h2>
+    <p>
+        We are students of <b>Government Polytechnic, Karad</b>, studying in 
+        <b>MSBTE Diploma 2nd Semester</b>. This website is created as part of our academic project to enhance our web development skills.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Our Team</h2>
+
+    <div class="students">
+
+        <div class="student">
+            <h3>Neha K. Mane</h3>
+            <p>Enrollment: 25210210353</p>
+            <p>Roll No: 246</p>
+            <p>Topic: Robotics</p>
+        </div>
+
+        <div class="student">
+             <h3>Aditi A. Gambare</h3>
+            <p>Enrollment: 25210210354</p>
+            <p>Roll No: 247</p>
+            <p>Topic: Space Technology</p>
+        </div>
+
+        <div class="student">
+            <h3>Shravani S. Dhane</h3>
+            <p>Enrollment: 25210210355</p>
+            <p>Roll No: 248</p>
+            <p>Topic: Virtual Reality</p>
+        </div>
+
+        <div class="student">
+            <h3>Darshan A. Tate</h3>
+            <p>Enrollment: 25210210356</p>
+            <p>Roll No: 249</p>
+            <p>Topic: Self Driving Cars</p>
+        </div>
+
+        <div class="student">
+            <h3>Sujal V. Patil</h3>
+            <p>Enrollment: 25210210357</p>
+            <p>Roll No: 250</p>
+            <p>Topic: Artificial Intelligence</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="card">
+    <h2>Our Objective</h2>
+    <p>
+        The objective of this project is to understand modern technologies and develop a responsive website using HTML and CSS.
+        It also helps us improve teamwork, creativity, and technical skills.
+    </p>
+</div>
+
+</section>
+<div class="center-btn">
+    <a href="2nd page (1).html">
+        <button class="btn back">
+            ⬅ Back</button>
+    </a>
+</div>
+<footer>
+    <p>© 2026 Future Technology Project | Government Polytechnic, Karad</p>
+</footer>
+
+</body>
+</html>

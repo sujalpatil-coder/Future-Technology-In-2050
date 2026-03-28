@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<style>
+
+body {
+    text-align: center;
+    background: #0f172a;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    overflow-x: hidden;
+
+    /* Fade in animation */
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Fade-in keyframe */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Animated heading */
+h1 {
+    font-size: 50px;
+    margin-top: 30px;
+
+    /* Glow animation */
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    }
+    to {
+        text-shadow: 0 0 20px blue, 0 0 40px cyan;
+    }
+}
+
+/* Image styling */
+img {
+    width: 800px;
+    border-radius: 15px;
+    margin-top: 20px;
+
+    /* Floating animation */
+    animation: float 4s ease-in-out infinite;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+/* Floating effect */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Image hover zoom */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px cyan;
+}
+
+/* Paragraph animation */
+p {
+    font-size: 20px;
+    margin: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Button styling */
+a {
+    padding: 12px 25px;
+    background: cyan;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+/* Button hover animation */
+a:hover {
+    background: #00e5ff;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Ripple effect */
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+a:hover::after {
+    width: 200px;
+    height: 200px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Future Technology</h1>
+
+<img src="https://www.innovationnewsnetwork.com/wp-content/uploads/2025/01/shutterstock_2309752637-696x391.jpg">
+
+<p>Click below to explore technologies</p>
+
+<!-- Button -->
+<a href="2nd page (1) - Copy.html">Explore</a>
+
+</body>
+</html>

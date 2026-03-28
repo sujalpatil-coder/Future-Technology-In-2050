@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Space Event</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(-45deg, #0b0c2a, #1a1c4a, #0b0c2a, #020617);
+            background-size: 400% 400%;
+            animation: bgAnimation 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        @keyframes bgAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 380px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 25px rgba(0, 230, 230, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00e6e6;
+        }
+
+        .input-box {
+            position: relative;
+            margin: 18px 0;
+        }
+
+        .input-box input,
+        .input-box select {
+            width: 100%;
+            padding: 10px;
+            background-color: #0b0c2a;
+            border: 2px solid #00e6e6;
+            outline: none;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* ✅ FIX: Dropdown visible */
+        select option {
+            background-color: #0b0c2a;
+            color: white;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #aaa;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus ~ label,
+        .input-box input:valid ~ label,
+        .input-box select:focus ~ label {
+            top: -8px;
+            left: 8px;
+            font-size: 12px;
+            color: #00e6e6;
+            background: #0b0c2a;
+            padding: 0 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #00e6e6;
+            border: none;
+            color: black;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #00b3b3;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #00e6e6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Register Now</h1>
+
+    <form action="after registeration.html"method="get">
+
+        <div class="input-box">
+            <input type="text" required>
+            <label>Full Name</label>
+        </div>
+
+        <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+        </div>
+
+        <div class="input-box">
+            <input type="tel" required>
+            <label>Phone Number</label>
+        </div>
+
+        <div class="input-box">
+            <input type="text" required>
+            <label>College Name</label>
+        </div>
+
+        <div class="input-box">
+            <input type="text" required>
+            <label>Branch</label>
+        </div>
+
+        <div class="input-box">
+            <select required>
+                <option value="" disabled selected>Select Mode</option>
+                <option>Online</option>
+                <option>Offline</option>
+            </select>
+            <label>Mode of Participation</label>
+        </div>
+
+        <div class="input-box">
+            <select required>
+                <option value="" disabled selected>Select Technology</option>
+                <option>Artificial Intelligence</option>
+                <option>Robotics</option>
+                <option>Space Technology</option>
+                <option>Virtual Reality</option>
+                <option>Self Driving Car</option>
+            </select>
+            <label>Select Technology</label>
+        </div>
+
+        <button type="submit"class="btn">Submit</button>
+    </form>
+
+    <a href="2nd page (1).html" class="back">← Back to Home</a>
+</div>
+
+</body>
+</html>

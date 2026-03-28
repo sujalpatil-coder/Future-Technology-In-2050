@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Self Driving Cars</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #0f172a, #020617);
+    color: #e5e7eb;
+}
+
+header {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    padding: 40px;
+    text-align: center;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #93c5fd;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.image-box {
+    position: relative;
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+section {
+    padding: 30px;
+}
+
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.card-img img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #1e3a8a;
+}
+
+th, td {
+    border: 1px solid #374151;
+    padding: 12px;
+    text-align: center;
+}
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 20px;
+}
+.center-btn {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;       /* center vertically */
+    gap: 20px;                 /* space between buttons */
+    margin: 40px 0;
+}
+
+/* Button style */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Back button */
+.back {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Self Driving Cars</h1>
+    <p>Future of Autonomous Vehicles</p>
+</header>
+
+<section class="hero">
+    <div class="image-box">
+        <img src="https://acko-cms.ackoassets.com/what_are_self_driving_cars_5cc91378cd.png">
+
+    <h2>Smart Transportation System</h2>
+    <p>Autonomous vehicles reduce human effort and improve safety.</p>
+</section>
+
+<section>
+    <div class="card">
+        <h2>About Self Driving Cars</h2>
+        <p>
+        Self-driving cars, also known as autonomous vehicles, are one of the most exciting developments in modern technology. These vehicles are designed to operate without human intervention by using advanced systems such as sensors, cameras, artificial intelligence, and machine learning. Companies like Tesla, Google (through its project Waymo), and Uber are actively developing this technology to make transportation safer and more efficient.
+The working of self-driving cars depends on a combination of technologies. Sensors such as LiDAR (Light Detection and Ranging), radar, and cameras collect real-time data about the vehicle’s surroundings. This data is processed using artificial intelligence algorithms that help the car recognize objects, detect obstacles, follow traffic rules, and make decisions like when to stop, accelerate, or turn. The system continuously learns and improves through machine learning, making it smarter over time.
+Self-driving cars offer several advantages. One of the most important benefits is improved road safety. Since human error is responsible for most road accidents, removing the need for a human driver can significantly reduce collisions. These vehicles can also improve traffic flow, reduce congestion, and save time. Additionally, autonomous cars can provide mobility to people who cannot drive, such as the elderly or disabled, making transportation more inclusive.
+However, there are also challenges associated with self-driving cars. The technology is still developing and requires extensive testing to ensure reliability in all situations, such as bad weather or complex traffic conditions. There are also concerns about cybersecurity, as these vehicles rely heavily on software and connectivity. Legal and ethical issues, such as determining responsibility in case of an accident, also need to be addressed before widespread adoption.
+In conclusion, self-driving cars represent the future of transportation. While there are still challenges to overcome, their potential benefits in terms of safety, efficiency, and convenience make them a promising innovation. As technology continues to advance, autonomous vehicles are likely to become a common part of our daily lives, transforming the way we travel.
+        </p>
+        <p>
+        These cars can detect objects, follow traffic rules, and make decisions
+        in real-time to ensure safe driving.
+        </p>
+    </div>
+</section>
+
+<!-- UPDATED TYPES SECTION WITH WIKIPEDIA LINKS -->
+<section>
+    <h2>Types of Automation</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-img">
+                <a href="https://en.wikipedia.org/wiki/Advanced_driver-assistance_systems" target="_blank">
+                    <img src="https://www.shutterstock.com/image-photo/cockpit-futuristic-autonomous-car-260nw-1095831881.jpg">
+                </a>
+                <div class="card-overlay">Level 1 - Driver Assistance</div>
+            </div>
+            <p><b><u>1.Definition & features:</u></b><br>
+          Advanced Driver Assistance Systems (ADAS) are a suite of electronic technologies integrated into vehicles to enhance safety and improve the driving experience by automating, adapting, or enhancing vehicle systems. By monitoring the environment and assisting the driver, these systems aim to reduce the human errors that cause approximately 94% of road accidents.</p>
+       <p><b><u>2.Component & Types:</u></b><br>
+           Advanced Driver Assistance Systems (ADAS) are electronic, sensor-based technologies designed to enhance vehicle safety and driver convenience by detecting hazards, automating tasks, and providing warnings. Key components include sensors (radar, LIDAR, cameras), processing units, and actuators, which manage features like collision avoidance, lane keeping, and adaptive cruise control, spanning autonomous levels 1–2.</p>
+       <p><b><u>3.Application & Advantage:</u></b><br>
+Advanced Driver-Assistance Systems (ADAS) utilize sensors, cameras, and AI to enhance vehicle safety and comfort, significantly reducing human error—the cause of most road crashes. Key applications include automatic emergency braking, adaptive cruise control, lane-keeping assist, and parking assistance. The primary advantages are increased road safety, reduced driver fatigue, and better traffic management.</p>
+<div class="card">
+            <div class="card-img">
+                <a href="https://en.wikipedia.org/wiki/Self-driving_car" target="_blank">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-self-driving-car-illustration_23-2150677645.jpg">
+                </a>
+                <div class="card-overlay">Level 3 - Partial Automation</div>
+            </div>
+            <p><b><u>1.Definition & Features:</u></b><br>
+        Partial automation is a human-centric approach where technology handles routine tasks, data analysis, or specific operations, while human workers retain oversight, handle complex exceptions, and deliver context-dependent judgment. It serves as a middle ground between manual operations and full automation, designed to augment human potential.</p>
+         <p><b><u>2.Component & Types:</u></b><br>
+        Partial automation involves combining automated systems with human intervention, where machines handle specific tasks while operators manage complex, unpredictable scenarios. It improves efficiency and safety while maintaining human control, serving as an intermediate step toward full automation. Key components include sensors, actuators, control systems, and human-machine interfaces, commonly applied in manufacturing, robotics, and driving assistance systems (ADAS).</p>
+       <p><b><u>3.Application & Advantage:</u></b><br>
+        Partial automation improves efficiency and safety by combining machine speed with human intelligence, allowing workers to focus on complex tasks while automating repetitive or dangerous ones. Key applications include manufacturing robotics, warehouse data management, and AI-assisted professional tools. Advantages feature increased productivity, reduced errors, and lower costs.</p>    
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <a href="https://en.wikipedia.org/wiki/Autonomous_car" target="_blank">
+                    <img src="https://go4hosting.in/blog/wp-content/uploads/2020/02/Tesla-Autopilot.jpg">
+                </a>
+                <div class="card-overlay">Level 5 - Full Automation</div>
+            </div>
+            <p><b><u>1.Definition & Features:</u></b><br>
+                Full automation is the complete delegation of tasks, processes, or decision-making to technology—machines, software, or AI—operating without continuous human intervention. It aims for maximum productivity, safety, and precision, often utilized in "lights-out" manufacturing, autonomous vehicles, and complex, self-adjusting data systems to eliminate human error and labor costs.</p>
+            <p><b><u>2.Component & Types:</u></b><br>
+        Full automation is the operation of systems with minimal or no human intervention, relying on sensors, AI, and robotics to improve efficiency and reduce errors. Key components include sensors (data collection), controllers (decision-making), and actuators (action execution), while types range from fixed industrial automation to cognitive AI-driven systems.</p>
+            <p><b><u>3.Application & Advantage:</u></b><br>
+           Full automation (or "lights-out" manufacturing) removes human intervention from processes, utilizing AI, robotics, and software to operate 24/7. Key applications include manufacturing, data entry, supply chain, and customer service (chatbots). Advantages include higher productivity, reduced operating costs, increased precision, and enhanced safety.</p>
+        </div>
+  </div>
+</section>
+<section>
+    <h2>Applications</h2>
+  <table>
+        <tr>
+            <th>Field</th>
+            <th>Use</th>
+        </tr>
+        <tr>
+            <td>Transport</td>
+            <td>Driverless Taxis</td>
+        </tr>
+        <tr>
+            <td>Logistics</td>
+            <td>Autonomous Trucks</td>
+        </tr>
+        <tr>
+            <td>Safety</td>
+            <td>Accident Reduction</td>
+        </tr>
+        <tr>
+            <td>Smart Cities</td>
+            <td>Traffic Control</td>
+        </tr>
+    </table>
+</section>
+<div class="center-btn">
+    <a href="2nd page (1).html">
+        <button class="btn back">
+            ⬅ Back</button>
+    </a>
+</div>
+<footer>
+    <p>© Self Driving Cars Project</p>
+</footer>
+</body>
+</html>
